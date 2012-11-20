@@ -24,17 +24,40 @@ h1 {
   font-size:28px;
 }
 
+#business-card {
+}
+
 #nickname {
-  font-size:28px;
-  font-weight:bold;
-  margin-bottom:5px;
-  margin-top:5px;
+	font-size:28px;
+	font-weight:bold;
+	margin-bottom:5px;
+	margin-top:5px;
 }
 
 #realname {
-  font-size:18px;
-  font-weight:normal;
-  margin-bottom:30px;
+	font-size:18px;
+	font-weight:normal;
+}
+
+#blog-info {
+	margin-top:30px;
+}
+
+#profiles li {
+	display:inline-block;
+	margin-right:5px;
+}
+
+#profiles img {
+	opacity:0.8;
+}
+
+#menu {
+	margin-top:40px;
+	margin-left:10px;
+}
+
+#menu li {
 }
 
 h2 {
