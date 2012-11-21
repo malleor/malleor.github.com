@@ -1,4 +1,8 @@
-<section>
-KONTENT:<br>
-{{ content }}
-</section>
+---
+layout: blog
+---
+				<div class="post">
+					<h2 class="post-title">{{ post.title }}</h2>
+					<small class="post-date">Posted on {{ post.date | date: "%d %b %Y" }}</small>
+					<p>{{ post.content }}</p>
+				</div>

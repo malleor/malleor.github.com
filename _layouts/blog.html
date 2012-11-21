@@ -1,0 +1,57 @@
+---
+projects: [
+	{name: TLEMsafe, href: '#'},
+	{name: FRAMES, href: '#'}
+]
+---
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+		<title>malleor's blog</title>
+		
+		<base href="{{ site.url }}">
+
+		<link rel="stylesheet" href="/stylesheets/styles.css" type="text/css">
+		<link rel="stylesheet" href="/stylesheets/pygment_trac.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div id='business-card'>
+					<img id='avatar' height="128" src="https://secure.gravatar.com/avatar/2a4c27d874d64e6d399c5c97fc9e32f9?s=128" width="128">
+					<p id='nickname'>malleor</p>
+					<p id='realname'>Janusz Lenar</p>
+				</div>
+				<div id='blog-info'>
+					<ul id='profiles'>
+						<li><a href="https://github.com/malleor"><img src="/images/GH.png" alt="GitHub" style="border:0;width:32px;height:32px;"/></a>
+						<li><a href="https://plus.google.com/105539416599342504812" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a>
+					</ul>
+				</div>
+				<div id='menu'>
+					<ul>
+					{% for project in page.projects %}
+						<li><a href="{{ project.href }}">{{ project.name }}&nbsp;&#9656;</a>
+					{% endfor %}
+					</ul>
+				</div>
+			</header>
+			<section>
+				{{ content }}
+			</section>
+			<footer>
+				<p><small>Using <a href="http://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://pages.github.com/">GitHub Pages</a></small></p>
+			</footer>
+		</div>
+		<script src="/javascripts/scale.fix.js"></script>
+		
+	</body>
+</html>
