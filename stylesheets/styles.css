@@ -234,6 +234,10 @@ footer {
   bottom:50px;
 }
 
+footer p {
+  margin:0;
+}
+
 .post-date {
 }
 
